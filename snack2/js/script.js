@@ -9,7 +9,7 @@ const numbers = [];
 do { 
     const numberUser = parseInt(prompt('inserisci un numero'));
     numbers.push(numberUser); }
-    while (numbers.length < 4)
+    while (sum < 50);
 
 arraySum();
 function arraySum() {
