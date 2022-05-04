@@ -24,14 +24,19 @@ const squadre = [
 ]
 
 
-
-
+//seleziona gli oggetti uno alla volta
 squadre.forEach(element => {
+    //crea delle variabili per punti e falli subiti
     let puntiNew = element.punti;
     let falliSubitiNew = element.falliSubiti;
+    //crea due numeri random
     let randomNumber1 = Math.floor(Math.random()*100);
     let randomNumber2 = Math.floor(Math.random()*100);
+    //assegna i numeri random alle variabili di punti e falli subiti
     puntiNew = randomNumber1;
     falliSubitiNew = randomNumber2; 
     console.log(puntiNew, falliSubitiNew);
+    //tramite operatore spread copia l'array e modifica punti e falli subiti con le nuove variabili 
+    const elementNew = {...element, punti: puntiNew, falliSubiti: falliSubitiNew};
+    console.log(elementNew);
 })
