@@ -6,25 +6,20 @@
 
 const numbers = [];
 
+let sum = 0;
+
 do { 
     const numberUser = parseInt(prompt('inserisci un numero'));
     numbers.push(numberUser); }
-    while (sum < 50);
+    while (numbers.length < 3)
+    
+for(let i = 0; i<numbers.length; i++) {
+    sum += numbers[i];
+}
 
-arraySum();
-function arraySum() {
-    let sum = 0;
-    for(let i = 0; i<numbers.length; i++) {
-        sum += numbers[i];
-    }
-    return sum
-}   
+  
+
 console.log(numbers);
 console.log(sum);
 
-// do {
-//     const userNumbers = parseInt(prompt('inserisci numero'));
-//     numbers.push(userNumbers);
-//     } while (numbers.length < 4);
-    
-//     console.log(numbers);
+
